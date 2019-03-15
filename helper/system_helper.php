@@ -1,5 +1,27 @@
 <?php
 
+function tanggal($str = '')
+{
+	if(!empty($str))
+	{
+		$bulan = array('01'=>'Januari','02'=>'Februari','03'=>'Maret','04'=>'April','05'=>'Mei','06'=>'Juni','07'=>'Juli','08'=>'Agustus','09'=>'September','10'=>'Oktober','11'=>'November','12'=>'Desember');
+		$tahun = substr($str,4,6);
+		if($tahun>95)
+		{
+			$tahun = '19'.$tahun;
+		}else{
+			$tahun = '20'.$tahun;
+		}
+		$date = '';
+		$date .= substr($str,0,2);
+		$date .= '-';
+		$date .= $bulan[substr($str,2,2)];
+		$date .= '-';
+		$date .= $tahun;
+	}
+	return $date;
+}
+
 if(!function_exists('pr'))
 {
 	function pr($text='', $return = false)
