@@ -31,10 +31,13 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<?php 
-				foreach ($data as $key => $value) 
+				<?php
+				if(!empty($data))
 				{
-					pr($value);
+					foreach ($data as $key => $value) 
+					{
+						pr($value);
+					}
 				}
 				?>
 			</div>
