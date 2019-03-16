@@ -34,96 +34,92 @@
 				<?php
 				if(!empty($data))
 				{
-<<<<<<< HEAD
-					?>
-					<div class="col-md-6">
-						<table border="1" style="width: 100%;">
-							<tr style="text-align: center;">
-								<td rowspan="5"  ><img src="images/logo/logojateng.png" alt="" width="70"></td>
-								<td>PEMERINTAH PROVINSI JAWA TENGAH</td>
-								<td colspan="2"></td>
-							</tr>
-							<tr style="text-align: center;">
-								<td>DINAS PENDIDIKAN DAN KEBUDAYAAN</td>
-								<td colspan="2"></td>
-							</tr>
-							<tr style="text-align: center;">
-								<td>SMK NEGERI 1 BANGSRI</td>
-								<td colspan="2"></td>
-							</tr>
-							<tr style="text-align: center; font-size: 11px;">
-								<td>JL. Kh. Achmad Fauzan No. 17 Krasak-Bangsri (0291) 772321-7772322 JEPARA</td>
-								<td colspan="2"></td>
-							</tr>
-							<tr style="text-align: center;">
-								<td>email : smkn1bangsri@yahoo.com</td>
-								<td colspan="2"></td>
-							</tr>
-							<tr style="text-align: center;">
-								<td colspan="4">KARTU PESERTA USBN</td>
-							</tr>
-						</table>
-						<table border="1" style="width: 100%;">
-							<tr>
-								<td colspan="2" style="width: 25%;">Asal Sekolah</td>
-								<td>:</td>
-								<td>SMK N 1 BANGSRI</td>
-							</tr>
-							<tr>
-								<td colspan="2" style="width: 25%;">Nomor Peserta</td>
-								<td>:</td>
-								<td><?php echo $value['NO PESERTA'] ?></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="width: 25%;">Nama</td>
-								<td>:</td>
-								<td><?php echo $value['NAMA SISWA'] ?></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="width: 25%;">tmp & Tgl Lahir</td>
-								<td>:</td>
-								<td><?php echo $value['TEMPAT LAHIR'].' '.tanggal($value['TGL LAHIR']) ?></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="width: 25%;">Ruang</td>
-								<td>:</td>
-								<td><?php echo $value['RUANG'] ?></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="width: 25%;">Kelas</td>
-								<td>:</td>
-								<td><?php echo $value['KELAS'] ?></td>
-							</tr>
-						</table>
-						<table border="1" style="width: 100%;">
-							<tr>
-								<tr>
-									<td style="width: 40%;text-align: center;"><img src="images/logo/logojateng.png" alt="" width="150"></td>
-									<td>
-										<table>
-											<tr>
-												<td>Jepara, 19 Maret 2019</td>
-											</tr>
-											<tr>
-												<td>Kepala SMK N 1 BANGSRI</td>
-											</tr>
-											<tr>
-												<td style="width: 40%;text-align: center;"><img src="images/logo/ttd.png" alt="" width="150"></td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</tr>
-						</table>
-						<br>
-					</div>
-					<?php
-=======
 					foreach ($data as $key => $value) 
 					{
-						pr($value);
+						?>
+						<div class="col-md-6">
+							<table border="1" style="width: 100%;">
+								<tr style="text-align: center;">
+									<td rowspan="5"  ><img src="images/logo/logojateng.png" alt="" width="70"></td>
+									<td>PEMERINTAH PROVINSI JAWA TENGAH</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr style="text-align: center;">
+									<td>DINAS PENDIDIKAN DAN KEBUDAYAAN</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr style="text-align: center;">
+									<td>SMK NEGERI 1 BANGSRI</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr style="text-align: center; font-size: 11px;">
+									<td>JL. Kh. Achmad Fauzan No. 17 Krasak-Bangsri (0291) 772321-7772322 JEPARA</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr style="text-align: center;">
+									<td>email : smkn1bangsri@yahoo.com</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr style="text-align: center;">
+									<td colspan="4">KARTU PESERTA USBN</td>
+								</tr>
+							</table>
+							<table border="1" style="width: 100%;">
+								<tr>
+									<td colspan="2" style="width: 25%;">Asal Sekolah</td>
+									<td>:</td>
+									<td>SMK N 1 BANGSRI</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width: 25%;">Nomor Peserta</td>
+									<td>:</td>
+									<td><?php echo $value['NO PESERTA'] ?></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width: 25%;">Nama</td>
+									<td>:</td>
+									<td><?php echo $value['NAMA SISWA'] ?></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width: 25%;">tmp & Tgl Lahir</td>
+									<td>:</td>
+									<td><?php echo $value['TEMPAT LAHIR'].' '.tanggal($value['TGL LAHIR']) ?></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width: 25%;">Ruang</td>
+									<td>:</td>
+									<td><?php echo $value['RUANG'] ?></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width: 25%;">Kelas</td>
+									<td>:</td>
+									<td><?php echo $value['KELAS'] ?></td>
+								</tr>
+							</table>
+							<table border="1" style="width: 100%;">
+								<tr>
+									<tr>
+										<td style="width: 40%;text-align: center;"><img src="images/logo/logojateng.png" alt="" width="150"></td>
+										<td>
+											<table>
+												<tr>
+													<td>Jepara, 19 Maret 2019</td>
+												</tr>
+												<tr>
+													<td>Kepala SMK N 1 BANGSRI</td>
+												</tr>
+												<tr>
+													<td style="width: 40%;text-align: center;"><img src="images/logo/ttd.png" alt="" width="150"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</tr>
+							</table>
+							<br>
+						</div>
+						<?php
 					}
->>>>>>> 4f22d186f829d833c37d9a780add87439f4b4d3b
 				}
 				?>
 			</div>
