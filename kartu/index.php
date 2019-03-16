@@ -31,9 +31,10 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<?php 
-				foreach ($data as $key => $value) 
+				<?php
+				if(!empty($data))
 				{
+<<<<<<< HEAD
 					?>
 					<div class="col-md-6">
 						<table border="1" style="width: 100%;">
@@ -117,6 +118,12 @@
 						<br>
 					</div>
 					<?php
+=======
+					foreach ($data as $key => $value) 
+					{
+						pr($value);
+					}
+>>>>>>> 4f22d186f829d833c37d9a780add87439f4b4d3b
 				}
 				?>
 			</div>
