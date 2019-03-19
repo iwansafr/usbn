@@ -48,6 +48,14 @@
 					{
 						$image = glob('new_image/images/2019/'.strtolower(str_replace(' ','_',$_GET['kelas'])).'/'.str_replace(' ','_',strtolower($value['NAMA SISWA']).'*'));
 						$image = @$image[0];
+						if(empty($image))
+						{
+							?>
+							<script type="text/javascript">
+								alert('<?php echo $value['NAMA SISWA'];?> tidak ada foto');
+							</script>
+							<?php
+						}
 						?>
 						<div class="col-md-12">
 							<div class="col-md-5 col-xs-5">
