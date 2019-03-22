@@ -57,7 +57,7 @@
 							<?php
 						}
 						?>
-						<div class="col-md-12">
+						<div class="col-md-12" style="margin-bottom: 40px;">
 							<div class="col-md-5 col-xs-5">
 								<table border="1" style="width: 100%; font-size: 12px;">
 									<tr style="text-align: center;">
@@ -115,7 +115,7 @@
 								<table border="1" style="width: 100%; font-size: 12px;">
 									<tr>
 										<tr>
-											<td style="width: 40%;text-align: center;"><img src="<?php echo $image ?>" alt="" height="143"></td>
+											<td style="width: 40%;text-align: center;"><img src="<?php echo $image ?>" alt="" height="140"></td>
 											<td>
 												<table style="text-align: center;">
 													<tr>
