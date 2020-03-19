@@ -43,7 +43,7 @@
 			{
 				?>
 				<div class="container">
-					<a href="?kelas=<?php echo $_GET['kelas'] ?>&t=pdf" class="btn btn-sm btn-default">print</a>
+					<a href="?kelas=<?php echo $_GET['kelas'] ?>&no=<?php echo $_GET['no'] ?>&t=pdf" class="btn btn-sm btn-default">print</a>
 				</div>
 				<?php
 			}
