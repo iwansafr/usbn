@@ -19,7 +19,8 @@
 						<div class="panel-body">
 							<form action="" method="get">
 								<div class="form-group">
-									<input type="text" name="ruang" class="form-control">
+									<input type="text" name="ruang" class="form-control" placeholder="ruang">
+									<input type="number" name="th" class="form-control" placeholder="tahun">
 								</div>
 								<div class="form-group">
 									<button type="submit" class="btn btn-sm btn-success">cari</button>
@@ -40,20 +41,20 @@
 				</div>
 				<?php
 			}
-			if(!empty($data))
+			if(!empty($data) && !empty($_GET['th']))
 			{
 				?>
 				<div class="row">
 					<?php
 					foreach ($data as $key => $value) 
 					{
-						$image = glob('new_image/images/2019/'.strtolower(str_replace(' ','_',$value['KELAS'])).'/'.str_replace(' ','_',strtolower($value['NAMA SISWA']).'*'));
+						$image = glob('new_image/images/'.@$_GET['th'].'/'.strtolower(str_replace(' ','_',$value['KELAS'])).'/'.str_replace(' ','_',strtolower($value['NAMA SISWA']).'*'));
 						$image = @$image[0];
 						if(empty($image))
 						{
 							?>
 							<script type="text/javascript">
-								alert('<?php echo $value['NAMA SISWA'];?> tidak ada foto');
+								console.log('<?php echo $value['NAMA SISWA']. ' | '.$value['KELAS'] ;?>');
 							</script>
 							<?php
 						}

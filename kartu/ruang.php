@@ -75,7 +75,7 @@
 								{
 									$pull = 'pull-right';
 								}
-								$image = glob('new_image/images/2019/'.strtolower(str_replace(' ','_',$value['KELAS'])).'/'.str_replace(' ','_',strtolower($value['NAMA SISWA']).'*'));
+								$image = glob('new_image/images/2020/'.strtolower(str_replace(' ','_',$value['KELAS'])).'/'.str_replace(' ','_',strtolower($value['NAMA SISWA']).'*'));
 								$image = @$image[0];
 								if(empty($image))
 								{

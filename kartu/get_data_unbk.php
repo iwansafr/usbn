@@ -3,7 +3,7 @@
 
 if(!empty($_GET['kelas']))
 {
-	$data = file_get_contents('images/2019/data/siswa_unbk_lab.json');
+	$data = file_get_contents('images/2020/data/siswa_unbk_lab.json');
 
 	$data = json_decode($data,1);
 	$search_data = array();
@@ -17,7 +17,7 @@ if(!empty($_GET['kelas']))
 	$data = $search_data;
 }else if(!empty($_GET['ruang']))
 {
-	$data = file_get_contents('images/2019/data/siswa_unbk_lab.json');
+	$data = file_get_contents('images/2020/data/siswa_unbk_lab.json');
 
 	$data = json_decode($data,1);
 	$search_data = array();
@@ -30,6 +30,6 @@ if(!empty($_GET['kelas']))
 	}
 	$data = $search_data;
 }else{
-	$data = file_get_contents('images/2019/data/siswa_unbk_lab.json');
+	$data = file_get_contents('images/2020/data/siswa_unbk_lab.json');
 	$data = json_decode($data,1);
 }
