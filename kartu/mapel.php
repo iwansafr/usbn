@@ -150,15 +150,5 @@ $mapel = array(
 		'rpl' => 'Fisika',
 		'tbsm' => 'Fisika',
 		'akl' => 'Ekonomi Bisnis',
-	),
-	array(
-		'no' => '6',
-		'hari' => 'Senin, 30 MAret 2020',
-		'pukul' => '07.30 - 09.00',
-		'otkp' => 'Administrasi Umum',
-		'bdp' => 'Administrasi Umum',
-		'rpl' => 'Sistem Komputer',
-		'tbsm' => '',
-		'akl' => 'Administrasi Umum',
 	)
 );
